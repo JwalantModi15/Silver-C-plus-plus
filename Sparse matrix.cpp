@@ -2,17 +2,7 @@
 #include "Functions.h"
 using namespace std;
 
-//void printMatrix(int arr[][], int r, int c){
-//	for(int i=0;i<r;i++){
-//		for(int j=0;j<c;j++){
-//			cout<<arr[i][j]<<" ";
-//		}
-//		cout<<endl;
-//	}
-//}
-
 void lowerTri(int r, int c){
-//	srand(time(0));
 	int arr[r][c];
 	for(int i=0;i<r;i++){
 		for(int j=0;j<c;j++){
@@ -22,7 +12,7 @@ void lowerTri(int r, int c){
 			else{
 				arr[i][j] = 0;	
 			}
-//			cout<<arr[i][j]<<endl;
+
 		}
 	}
 	for(int i=0;i<r;i++){
@@ -60,12 +50,12 @@ void triDia(int r, int c){
 }
 
 void upperTri(int r, int c){
-//	srand(time(0));
+
 	int arr[r][c];
 	for(int i=0;i<r;i++){
 		for(int j=i;j<c;j++){
 			arr[i][j] = random(1,9);
-//			cout<<arr[i][j]<<endl;
+
 		}
 		for(int k=0;k<i;k++){
 			arr[i][k] = 0;
@@ -80,7 +70,6 @@ void upperTri(int r, int c){
 }
 
 int main(){
-//	int arr[5][5];
 	int n,r,c;
 	
 	while(true){
