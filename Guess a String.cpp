@@ -1,7 +1,7 @@
 #include<iostream>
 #include<array>
 #include<ctime>
-#include"String.h"
+#include"Functions.h"
 using namespace std;
 
 int check(array<string, 5> arr, string str){
